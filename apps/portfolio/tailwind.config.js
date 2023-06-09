@@ -12,9 +12,42 @@ module.exports = {
     presets: [require('../../tailwind-workspace-preset.js')],
     darkMode: 'class',
     theme: {
-		colors: {
-			gryed: '#f8f8f8'
-		}
+		extend: {
+			fontFamily: {
+			  	jost: ['var(--font-jost)'],
+			  	roboto: ['var(--font-roboto)'],
+			},
+			colors: {
+				gryed: '#f8f8f8'
+			},
+			keyframes: {
+				spinnerline: {
+					'0%': {
+						width: 0,
+						left: 0,
+						right: 'auto'
+					},
+					'50%': {
+						width: '100%',
+						left: 0,
+						right: 'auto',
+					},
+					'51%': {
+						width: '100%',
+						left: 'auto',
+						right: 0,
+					},
+					'100%': {
+						width: 0,
+						left: 'auto',
+						right: 0,
+					}
+				}
+			},
+			animation: {
+				spinnerline: 'spinnerline 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite',
+			}
+		},
 	},
-    plugins: [],
+  	plugins: [],
 }
