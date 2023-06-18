@@ -18,7 +18,7 @@ module.exports = {
 			  	roboto: ['var(--font-roboto)'],
 			},
 			colors: {
-				gryed: '#f8f8f8'
+				brand: 'rgb(var(--color-brand) / <alpha-value>)',
 			},
 			keyframes: {
 				spinnerline: {
