@@ -22,7 +22,6 @@ export default async function Home() {
 
 	return (
 		<div>
-			Vinod Kumar
 		</div>
 	);
 }

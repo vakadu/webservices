@@ -17,10 +17,12 @@
     "paths": {
       "@webservices/config": ["libs/config/src/index.ts"],
       "@webservices/config/server": ["libs/config/src/server.ts"],
+      "@webservices/context-layer": ["libs/context-layer/src/index.ts"],
       "@webservices/services": ["libs/services/src/index.ts"],
       "@webservices/services/server": ["libs/services/src/server.ts"],
       "@webservices/ui": ["libs/ui/src/index.ts"],
-      "@webservices/ui/server": ["libs/ui/src/server.ts"]
+      "@webservices/ui/server": ["libs/ui/src/server.ts"],
+      "@webservices/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

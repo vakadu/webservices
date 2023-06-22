@@ -1,9 +1,45 @@
-import { Jost, Roboto } from 'next/font/google'
+import { Jost, Roboto } from 'next/font/google';
+import localFont from 'next/font/local';
 
-import './css/global.css';
-import './css/vendors/animate.css';
-import './css/vendors/splitting.css';
-import './css/vendors/swiper.css';
+import './assets/css/global.css';
+import './assets/css/vendors/animate.css';
+import './assets/css/vendors/splitting.css';
+import './assets/css/vendors/swiper.css';
+
+const sans = localFont({
+	src: [
+		{
+			path: './assets/fonts/sans/GeneralSans-ExtraLight.otf',
+			weight: '200',
+			style: 'normal',
+		},
+		{
+			path: './assets/fonts/sans/GeneralSans-Light.otf',
+			weight: '300',
+			style: 'normal',
+		},
+		{
+			path: './assets/fonts/sans/GeneralSans-Regular.otf',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: './assets/fonts/sans/GeneralSans-Medium.otf',
+			weight: '500',
+			style: 'normal',
+		},
+		{
+			path: './assets/fonts/sans/GeneralSans-Semibold.otf',
+			weight: '600',
+			style: 'normal',
+		},
+		{
+			path: './assets/fonts/sans/GeneralSans-Bold.otf',
+			weight: '700',
+			style: 'normal',
+		},
+	],
+})
 
 export const metadata = {
 	title: 'Vinod Kumar | vakadu',
@@ -73,8 +109,10 @@ export default function RootLayout({
   	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${jost.variable} ${roboto.variable}`}>
-			<body className='relative overflow-hidden min-h-[50vh]'>{children}</body>
+		<html lang="en" className={`${jost.variable} ${roboto.variable} ${sans.className}`}>
+			<body>
+				{children}
+			</body>
 		</html>
 	);
 }

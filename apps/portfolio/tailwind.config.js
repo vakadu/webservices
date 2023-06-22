@@ -16,6 +16,7 @@ module.exports = {
 			fontFamily: {
 			  	jost: ['var(--font-jost)'],
 			  	roboto: ['var(--font-roboto)'],
+				sans: ['var(--font-sans)']
 			},
 			colors: {
 				brand: 'rgb(var(--color-brand) / <alpha-value>)',
