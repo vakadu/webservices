@@ -9,32 +9,32 @@ import './assets/css/vendors/swiper.css';
 const sans = localFont({
 	src: [
 		{
-			path: './assets/fonts/sans/GeneralSans-ExtraLight.otf',
+			path: './assets/fonts/sans/extra-light.otf',
 			weight: '200',
-			style: 'normal', 
+			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/GeneralSans-Light.otf',
+			path: './assets/fonts/sans/light.otf',
 			weight: '300',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/GeneralSans-Regular.otf',
+			path: './assets/fonts/sans/regular.otf',
 			weight: '400',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/GeneralSans-Medium.otf',
+			path: './assets/fonts/sans/medium.otf',
 			weight: '500',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/GeneralSans-Semibold.otf',
+			path: './assets/fonts/sans/semibold.otf',
 			weight: '600',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/GeneralSans-Bold.otf',
+			path: './assets/fonts/sans/bold.otf',
 			weight: '700',
 			style: 'normal',
 		},
