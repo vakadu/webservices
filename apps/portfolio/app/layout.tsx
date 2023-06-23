@@ -11,7 +11,7 @@ const sans = localFont({
 		{
 			path: './assets/fonts/sans/GeneralSans-ExtraLight.otf',
 			weight: '200',
-			style: 'normal', 
+			style: 'normal',
 		},
 		{
 			path: './assets/fonts/sans/GeneralSans-Light.otf',
