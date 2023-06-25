@@ -54,14 +54,6 @@ body.no-scroll {
     @apply -rotate-45;
 }
 
-.skin-switcher.active .dark svg{
-    @apply opacity-0 pointer-events-auto invisible;
-}
-
-.skin-switcher.active .light svg{
-    @apply opacity-100 pointer-events-auto visible;
-}
-
 .menu-overlay.is-visible{
     @apply opacity-100 visible pointer-events-auto;
 }

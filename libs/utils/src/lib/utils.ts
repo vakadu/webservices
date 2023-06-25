@@ -9,7 +9,7 @@ export function initCursor() {
 	let mouseY = window.innerHeight/2;
 
 	const cursor = {
-		el: document.querySelector('.cursor') as any,
+		el: document.querySelector('.cursor') as HTMLElement,
 		x: window.innerWidth/2,
 		y: window.innerHeight/2,
 		w: 30,

@@ -1,30 +1,31 @@
 "use client";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { toggleMenu } from "@webservices/utils";
 import LogoVinod from "../logo-vinod/logo-vinod";
 import { DarkIcon, LightIcon } from "@webservices/icons";
+import { useTheme } from "@webservices/context-layer";
 
 /* eslint-disable-next-line */
 export interface PortfolioHeaderProps {}
 
 export function PortfolioHeader(props: PortfolioHeaderProps) {
-	const [day, setDay] = useState<boolean>(false);
+	const { mode, toggleMode } = useTheme();
 
 	useEffect(() => {
-		if(day) {
+		if(mode === 'light') {
 			document.querySelector('body')?.classList.add('light');
 			document.querySelector('body')?.classList.remove('dark');
 		} else {
 			document.querySelector('body')?.classList.add('dark');
 			document.querySelector('body')?.classList.remove('light');
 		}
-	}, [day]);
+	}, [mode]);
 
 	return (
-		<header className='header absolute top-0 left-0 px-30 py-12 w-full z-[90] transition-all 
+		<header className='header absolute top-0 left-0 px-12 lg:px-30 py-12 w-full z-[90] transition-all 
 			duration-0.3 ease-smooth-header'>
 			<div className="flex justify-between items-center">
 				<div className="">
@@ -33,22 +34,27 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 				<div className="flex-1 flex justify-end items-center">
 					<a
 						href="#"
-						className={`skin-switcher relative inline-block text-center align-middle h-30 w-25 mr-40 ${day ? "" : "active"}`}
+						className={`
+							skin-switcher relative inline-block text-center align-middle 
+							h-30 w-25 mr-32 lg:mr-40
+						`}
 						onClick={(e) => {
 							e.preventDefault();
-							setDay(!day);
+							toggleMode(mode === 'dark' ? 'light' : 'dark');
 						}}
 					>
-						<span className="dark absolute top-1/2 left-1/2 leading-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2">
-							<DarkIcon className="max-w-[25px] opacity-100 pointer-events-auto visible"/>
-						</span>
-						<span className="light absolute top-1/2 left-1/2 leading-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2">
-							<LightIcon className="max-w-[25px] opacity-0 pointer-events-none invisible"/>
+						<span className="absolute top-1/2 left-1/2 leading-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2">
+							{
+								mode === "dark" ?
+									<LightIcon className="max-w-[25px]"/>
+									:
+									<DarkIcon className="max-w-[25px]"/>
+							}
 						</span>
 					</a>
 					<a
 						href="#"
-						className="h-30 w-28 relative mx-12 menu-btn z-4"
+						className="h-30 w-28 relative lg:mx-12 menu-btn z-4"
 						onClick={(e) => toggleMenu(e)}
 					>
 						<span className="w-full bg-black dark:bg-white h-2 absolute block top-8 transition-all duration-0.3 ease-smooth-header"/>
