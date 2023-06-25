@@ -1,8 +1,17 @@
+"use client";
+
+import { Fragment, useEffect } from "react";
+
 import { Server } from "@webservices/config";
 import { useAppwrite } from "@webservices/services";
-import { Preloader } from "@webservices/ui";
+import Hero from '../../components/home/hero';
 
-export default async function Home() {
+const HomePage = () => {
+
+	useEffect(() => {
+		document.querySelector('body')?.classList.add('home');
+	}, []);
+	
 	// const { createDocument } = useAppwrite();
 
 	// const result = createDocument(
@@ -21,8 +30,10 @@ export default async function Home() {
 	//   });
 
 	return (
-		<div>
-		</div>
+		<Fragment>
+			<Hero/>
+		</Fragment>
 	);
 }
 
+export default HomePage;

@@ -6,6 +6,7 @@ module.exports = {
     mode: 'jit',
     content: [
 		join(__dirname, 'app/**/*.{js,ts,jsx,tsx,mdx}'),
+		join(__dirname, 'components/**/*.{js,ts,jsx,tsx,mdx}'),
 		'libs/ui/src/**/!(*.stories|*.spec).{js,ts,jsx,tsx}',
 		...createGlobPatternsForDependencies(__dirname),
     ],
@@ -47,6 +48,9 @@ module.exports = {
 			},
 			animation: {
 				spinnerline: 'spinnerline 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite',
+			},
+			backgroundImage: {
+				ass: 'linear-gradient(0deg, #FFFFFF 0%, #F0EBE3 100%);'
 			}
 		},
 	},

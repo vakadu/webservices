@@ -18,10 +18,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
             <div className="relative min-h-[50vh]">
                 <PortfolioHeader/>
                 <div className="relative">
-                    { children } 
-                     {Array.from(Array(100), (e, i) => {
-                            return <li key={i}>{i}</li>
-                          })}
+                    { children }
                 </div>
             </div>
             <div className="cursor fixed top-0 left-0 w-[30px] h-[30px] bg-grey-light border border-transparent pointer-events-none rounded-full" />
