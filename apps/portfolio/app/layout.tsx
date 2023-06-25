@@ -2,6 +2,7 @@ import { Jost, Roboto } from 'next/font/google';
 import localFont from 'next/font/local';
 
 import './assets/css/global.css';
+import './assets/css/dark.css';
 import './assets/css/vendors/animate.css';
 import './assets/css/vendors/splitting.css';
 import './assets/css/vendors/swiper.css';

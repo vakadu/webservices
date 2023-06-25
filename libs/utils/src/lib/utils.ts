@@ -1,3 +1,5 @@
+import { MouseEvent } from 'react';
+
 export function initCursor() {
 
 	// The cursor is set to the center of the window by dividing 
@@ -30,6 +32,18 @@ export function initCursor() {
 		mouseX = e.clientX;
 		mouseY = e.clientY;
 	});
+
+	const link = document.querySelectorAll(
+		"a, .swiper-pagination, .swiper-button-prev, .swiper-button-next, button, .button, .btn, .lnk"
+	);
+	link.forEach((link) => {
+		link.addEventListener("mouseenter", () => {
+			cursor.el.classList.add("cursor-zoom");
+		});
+		link.addEventListener("mouseleave", () => {
+			cursor.el.classList.remove("cursor-zoom");
+		})
+	})
 
 	setInterval(move, 1000 / 60);
 
@@ -69,4 +83,30 @@ export function stickyNav() {
 			}
 		  }
 	})
+}
+
+export function toggleMenu(e: MouseEvent) {
+	e.preventDefault();
+	const menu = document.querySelector(".menu-btn");
+	if(menu?.classList.contains('active')) {
+		menu?.classList.remove('active');
+		menu?.classList.add('no-touch');
+		document.body.classList.remove('no-scroll');
+		document.querySelector(".menu-overlay")?.classList.remove("is-open");
+		document.querySelector(".menu-overlay")?.classList.remove("has-scroll");
+		document.querySelector(".menu-overlay")?.classList.remove("animate-active");
+		setTimeout(function () {
+			document.querySelector(".menu-overlay")?.classList.remove("visible");
+			menu.classList.remove("no-touch");
+		}, 1000);
+	} else {
+		menu?.classList.add('active', 'no-touch');
+		document.body.classList.add('no-scroll');
+		document.querySelector(".menu-overlay")?.classList.add("visible", "is-open");
+		setTimeout(function () {
+			document.querySelector(".menu-overlay")?.classList.add("has-scroll", "animate-active");
+			menu?.classList.remove("no-touch");
+		}, 1000);
+	}
+	return false;
 }

@@ -2,8 +2,15 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                grey: '#f4f4f4',
-                greyLight:'rgba(0, 0, 0, 0.2)'
+                grey: {
+                    none: 'rgba(0, 0, 0, 0)',
+                    light: 'rgba(0, 0, 0, 0.2)',
+                    shade: 'rgba(0, 0, 0, 0.5)',
+                    bg: '#F0EBE3'
+                },
+                dark: {
+                    bg: '#222831'
+                }
             },
             fontSize: {
                 '8': '8px',

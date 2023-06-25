@@ -24,7 +24,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
                           })}
                 </div>
             </div>
-            <div className="cursor fixed top-0 left-0 w-[30px] h-[30px] bg-greyLight border border-transparent pointer-events-none rounded-full" />
+            <div className="cursor fixed top-0 left-0 w-[30px] h-[30px] bg-grey-light border border-transparent pointer-events-none rounded-full" />
         </Fragment>
     )
 };
