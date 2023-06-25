@@ -9,7 +9,8 @@ module.exports = {
                     bg: '#F0EBE3'
                 },
                 dark: {
-                    bg: '#222831'
+                    bg: '#222831',
+                    drawer: '#31363c'
                 }
             },
             fontSize: {
@@ -107,7 +108,8 @@ module.exports = {
                 '56.25': '56.25%'
             },
             transitionDuration: {
-                '0.3': '0.3s'
+                '0.3': '0.3s',
+                '1': '1s'
             },
             transitionTimingFunction: {
                 'smooth-header': 'cubic-bezier(0.3, 0, 0.3, 1)',
@@ -124,6 +126,15 @@ module.exports = {
                         transform: 'translateZ(0) translateY(0px)' 
                     },
                 }
+            },
+            zIndex: {
+                2: 2,
+                3: 3,
+                4: 4,
+                5: 5
+            },
+            skew: {
+                '10': '10deg',
             }
         },
     },

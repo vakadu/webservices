@@ -96,13 +96,13 @@ export function toggleMenu(e: MouseEvent) {
 		document.querySelector(".menu-overlay")?.classList.remove("has-scroll");
 		document.querySelector(".menu-overlay")?.classList.remove("animate-active");
 		setTimeout(function () {
-			document.querySelector(".menu-overlay")?.classList.remove("visible");
+			document.querySelector(".menu-overlay")?.classList.remove("is-visible");
 			menu.classList.remove("no-touch");
 		}, 1000);
 	} else {
 		menu?.classList.add('active', 'no-touch');
 		document.body.classList.add('no-scroll');
-		document.querySelector(".menu-overlay")?.classList.add("visible", "is-open");
+		document.querySelector(".menu-overlay")?.classList.add("is-visible", "is-open");
 		setTimeout(function () {
 			document.querySelector(".menu-overlay")?.classList.add("has-scroll", "animate-active");
 			menu?.classList.remove("no-touch");

@@ -61,3 +61,16 @@ body.no-scroll {
 .skin-switcher.active .light svg{
     @apply opacity-100 pointer-events-auto visible;
 }
+
+.menu-overlay.is-visible{
+    @apply opacity-100 visible pointer-events-auto;
+}
+
+.menu-overlay.is-open{
+    @apply right-0;
+}
+
+.menu-overlay.is-open::before{
+    @apply skew-x-0 skew-y-0;
+}
+

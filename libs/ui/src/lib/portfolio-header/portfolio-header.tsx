@@ -48,14 +48,22 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 					</a>
 					<a
 						href="#"
-						className="h-30 w-28 relative mx-12 menu-btn"
+						className="h-30 w-28 relative mx-12 menu-btn z-4"
 						onClick={(e) => toggleMenu(e)}
 					>
 						<span className="w-full bg-black dark:bg-white h-2 absolute block top-8 transition-all duration-0.3 ease-smooth-header"/>
 						<span className="w-full bg-black dark:bg-white h-2 absolute block bottom-8 transition-all duration-0.3 ease-smooth-header"/>
 					</a>
-					<div className="menu-overlay">
+					<div className="menu-overlay fixed w-[512px] h-full z-3 
+						min-h-screen right-[-612px] opacity-0 invisible pointer-events-none 
+						transition-all duration-1 ease-smooth-header before:content-['']
+						before:absolute before:top-0 before:left-0 before:w-full before:h-full
+						before:bg-white before:transition-all before:duration-1 before:ease-smooth-header
+						before:skew-x-10 before:skew-y-0 before:dark:bg-dark-drawer
+					">
+						<div className="absolute top-0 left-0 overflow-hidden w-full h-full flex items-center">
 
+						</div>
 					</div>
 				</div>
 			</div>
