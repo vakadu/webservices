@@ -66,3 +66,6 @@ body.no-scroll {
     @apply skew-x-0 skew-y-0;
 }
 
+.title-shadow{
+    text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0px rgba(0, 0, 0, 0.2);
+}

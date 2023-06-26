@@ -27,7 +27,8 @@ module.exports = {
 				'24': '24px',
                 '28': '28px',
                 '32': '32px',
-                '42': '42px'
+                '42': '42px',
+                '90': '90px'
             },
             lineHeight: {
                 '10': '10px',
@@ -135,6 +136,13 @@ module.exports = {
             },
             skew: {
                 '10': '10deg',
+            },
+            letterSpacing: {
+                '0.05': '0.05em',
+                '0.10': '0.10em'
+            },
+            dropShadow: {
+                'title': '2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0px rgba(0, 0, 0, 0.2)'
             }
         },
     },

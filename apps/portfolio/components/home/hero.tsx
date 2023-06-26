@@ -5,10 +5,18 @@ const Hero = () => {
                 <div className="w-full">
                     <div className="relative">
                         <div>
-                            Hello My Name is
-                        </div>
-                        <div>
-                            Vinod Kumar
+                            <div className="max-w-[740px]">
+                                <div className="text-15 uppercase tracking-0.10">
+                                    <span>
+                                        Hello, <b className="text-brand">My Name is</b>
+                                    </span>
+                                </div>
+                                <h1 className="font-jost text-90 uppercase tracking-0.05 leading-[90px] mt-15 title-shadow text-white font-bold">
+                                    <span>
+                                        <b className="text-brand">Vinod</b> Kumar
+                                    </span>
+                                </h1>
+                            </div>
                         </div>
                         <div>
                             I am a Frontend Developer
