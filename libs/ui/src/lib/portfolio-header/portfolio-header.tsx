@@ -27,7 +27,7 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 	return (
 		<header className='header absolute top-0 left-0 px-12 lg:px-30 py-12 w-full z-[90] transition-all 
 			duration-0.3 ease-smooth-header'>
-			<div className="flex justify-between items-center">
+			<div className="flex justify-between items-center max-w-[1300px] mx-auto">
 				<div className="">
 					<LogoVinod/>
 				</div>
