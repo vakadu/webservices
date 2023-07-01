@@ -6,11 +6,15 @@ module.exports = {
                     none: 'rgba(0, 0, 0, 0)',
                     light: 'rgba(0, 0, 0, 0.2)',
                     shade: 'rgba(0, 0, 0, 0.5)',
-                    bg: '#F0EBE3'
+                    bg: '#F0EBE3',
+                    'dark-shade': '#a3a5a7'
                 },
                 dark: {
                     bg: '#222831',
                     drawer: '#31363c'
+                },
+                green: {
+                    dark: '#1E8449'
                 }
             },
             fontSize: {
@@ -110,13 +114,17 @@ module.exports = {
             },
             transitionDuration: {
                 '0.3': '0.3s',
+                '0.6': '0.6s',
+                '0.7': '0.7s',
                 '1': '1s'
             },
             transitionTimingFunction: {
                 'smooth-header': 'cubic-bezier(0.3, 0, 0.3, 1)',
             },
             animation: {
-                headerAnimation: 'headerAnimate 0.8s cubic-bezier(0.3, 0, 0.3, 1) 0s forwards'
+                headerAnimation: 'headerAnimate 0.8s cubic-bezier(0.3, 0, 0.3, 1) 0s forwards',
+                'drip-expand': 'expand 300ms ease-in forwards',
+				'drip-expand-large': 'expand-large 600ms ease-in forwards',
             },
             keyframes: {
                 headerAnimate: {
@@ -126,6 +134,38 @@ module.exports = {
                     '100%': { 
                         transform: 'translateZ(0) translateY(0px)' 
                     },
+                },
+                expand: {
+					'0%': {
+						opacity: 0,
+						transform: 'scale(1)',
+					},
+					'30%': {
+						opacity: 1,
+					},
+					'80%': {
+						opacity: 0.5,
+					},
+					'100%': {
+						transform: 'scale(30)',
+						opacity: 0,
+					},
+				},
+				'expand-large': {
+					'0%': {
+						opacity: 0,
+						transform: 'scale(1)',
+					},
+					'30%': {
+						opacity: 1,
+					},
+					'80%': {
+						opacity: 0.5,
+					},
+					'100%': {
+						transform: 'scale(96)',
+						opacity: 0,
+					},
                 }
             },
             zIndex: {
@@ -141,8 +181,17 @@ module.exports = {
                 '0.05': '0.05em',
                 '0.10': '0.10em'
             },
-            dropShadow: {
-                'title': '2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0px rgba(0, 0, 0, 0.2)'
+            borderWidth: {
+                '2': '2px'
+            },
+            borderRadius: {
+                4: '4px'
+            },
+            boxShadow: {
+                1: '5px 5px rgba(0, 0, 0, 0.2)'
+            },
+            blur: {
+                10: '10px'
             }
         },
     },

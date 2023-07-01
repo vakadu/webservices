@@ -1,4 +1,4 @@
-import { Jost, Roboto } from 'next/font/google';
+import { Jost } from 'next/font/google';
 import localFont from 'next/font/local';
 
 import './assets/css/global.css';
@@ -95,14 +95,7 @@ const jost = Jost({
 	subsets: ['latin'],
 	display: 'swap',
 	variable: '--font-jost',
-})
-   
-const roboto = Roboto({
-	subsets: ['latin'],
-	display: 'swap',
-	variable: '--font-roboto',
-	weight: ['300', '400', '500', '700'],
-})
+});
 
 export default function RootLayout({
   	children,
@@ -110,7 +103,7 @@ export default function RootLayout({
   	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${jost.variable} ${roboto.variable} ${sans.className}`}>
+		<html lang="en" className={`${jost.variable} ${sans.className}`}>
 			<body>
 				{children}
 			</body>

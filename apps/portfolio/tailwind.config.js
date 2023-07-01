@@ -16,11 +16,15 @@ module.exports = {
 		extend: {
 			fontFamily: {
 			  	jost: ['var(--font-jost)'],
-			  	roboto: ['var(--font-roboto)'],
+			  	satisfy: ['var(--font-satisfy)'],
 				sans: ['var(--font-sans)']
 			},
 			colors: {
 				brand: 'rgb(var(--color-brand) / <alpha-value>)',
+				secondary: '#040F0F',
+				teritary: '#2D3A3A',
+				beige: 'rgb(245, 239, 231)',
+				tomato: '#F06543'
 			},
 			keyframes: {
 				spinnerline: {

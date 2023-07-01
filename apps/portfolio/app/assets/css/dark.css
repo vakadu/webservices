@@ -1,5 +1,5 @@
 body.dark {
-	@apply bg-dark-bg;
+	@apply bg-teritary text-beige;
 }
 
 .dark .title-shadow{

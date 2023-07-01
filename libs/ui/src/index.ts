@@ -1,3 +1,4 @@
+export * from './lib/button/button';
 export * from './lib/portfolio-header/portfolio-header';
 export * from './lib/logo-vinod/logo-vinod';
 export * from './lib/preloader/preloader';

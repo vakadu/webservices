@@ -4,12 +4,12 @@
 
 @layer base {
     :root {
-      	--color-brand: 186 74 0;
+      	--color-brand: 36 130 50;
     }
 
     html,
     body {
-        @apply font-sans font-normal;
+        @apply font-sans font-normal text-secondary;
     }
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 body {
-	@apply bg-grey-bg;
+	@apply bg-beige;
 }
 
 body.no-scroll {
@@ -68,4 +68,15 @@ body.no-scroll {
 
 .title-shadow{
     text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.style-btn{
+    @apply before:absolute before:top-1/2 before:left-1/2 before:bg-brand before:transition-all 
+    before:duration-0.6 before:ease-smooth-header before:-translate-x-1/2 before:-translate-y-1/2
+    before:w-[0%] before:h-[0%] before:opacity-0 hover:before:w-[calc(100%-4px)] hover:before:h-[calc(100%-4px)] 
+    hover:before:opacity-100 hover:before:rounded-full before:blur-10 before:hover:blur-0 dark:!text-white;
+}
+
+.style-btn:hover span{
+    @apply text-white dark:text-white;
 }
