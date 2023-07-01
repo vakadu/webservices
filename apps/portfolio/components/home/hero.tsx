@@ -56,7 +56,7 @@ const Hero = () => {
                                     shape="circle"
                                     variant="ghost"
                                     color="black"
-                                    onClick={() => window.open('/resume/resume.pdf')}
+                                    onClick={() => window.open('https://res.cloudinary.com/dovja5zeh/image/upload/v1688226800/Vinod_Kumar_Resume_o4qeho.pdf')}
                                 >
                                     <span className="z-3">download cv</span>
                                 </Button>
