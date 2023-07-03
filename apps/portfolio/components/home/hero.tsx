@@ -60,6 +60,11 @@ const Hero = () => {
                                 >
                                     <span className="z-3">download cv</span>
                                 </Button>
+                                <a 
+                                    className="uppercase btn btn-link pl-72"
+                                >
+                                    My Skills
+                                </a>
                             </div>
                         </div>
                     </div>

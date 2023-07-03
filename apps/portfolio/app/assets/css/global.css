@@ -80,3 +80,11 @@ body.no-scroll {
 .style-btn:hover span{
     @apply text-white dark:text-white;
 }
+
+.btn{
+    @apply h-56 tracking-0.05 inline-block relative text-13 font-semibold transition-all duration-0.7 ease-smooth-header align-top leading-[56px] cursor-pointer;
+}
+
+.btn-link{
+    @apply before:absolute before:w-50 before:h-2 before:bg-black before:left-0 before:top-1/2;
+}
