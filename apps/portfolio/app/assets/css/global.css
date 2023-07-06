@@ -86,5 +86,5 @@ body.no-scroll {
 }
 
 .btn-link{
-    @apply before:absolute before:w-50 before:h-2 before:bg-black before:left-0 before:top-1/2;
+    @apply before:absolute before:w-50 before:h-2 before:bg-black before:left-0 before:top-1/2 before:dark:bg-grey-dark-shade;
 }
