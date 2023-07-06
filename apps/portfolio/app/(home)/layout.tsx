@@ -1,17 +1,31 @@
 "use client";
 
 import { PropsWithChildren, Fragment, useEffect } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 import { initCursor, stickyNav } from "@webservices/utils";
 import { PortfolioHeader } from "@webservices/ui";
+import { firebaseLogEvent } from "@webservices/analytics";
 
 const RootLayout = ({ children }: PropsWithChildren) => {
+    const pathname = usePathname();
+    const searchParams = useSearchParams();    
 
     useEffect(() => {
         initCursor();
 
         window.addEventListener("scroll", stickyNav);
     }, []);
+
+    useEffect(() => {
+        let newPageViewPath: string | undefined;
+
+        if (pathname) {
+            newPageViewPath = pathname + searchParams.toString();
+        }
+
+        firebaseLogEvent('screen_view', { newPageViewPath });
+    }, [pathname, searchParams]);
 
     return(
         <Fragment>

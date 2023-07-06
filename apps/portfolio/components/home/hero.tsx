@@ -67,6 +67,17 @@ const Hero = () => {
                                 </a>
                             </div>
                         </div>
+                        <div className="absolute top-1/2 -right-[100px] w-[680px] h-[800px] -mt-[390px] z-[2]">
+                            <span className="absolute left-0 bottom-0 w-[680px] h-[680px] rounded-full bg-brand"/>
+                            <div className="absolute z-5 top-[420px] -left-[120px]">
+                                <ul className="m-0 p-0 list-none">
+                                    <li className="m-0 flex items-center text-black border-[2px] border-white rounded-full h-[82px] w-[250px] px-20 justify-center mt-[160px] ml-[100px] shadow-1 bg-white">
+                                        <span className="block text-[38px] w-[50%] text-center leading-[20px]">6 <strong>+</strong></span>
+                                        <span className="w-[50%] uppercase text-13 leading-[20px]">Years of <strong className="text-brand">Experience</strong></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

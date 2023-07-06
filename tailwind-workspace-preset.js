@@ -189,7 +189,7 @@ module.exports = {
                 4: '4px'
             },
             boxShadow: {
-                1: '5px 5px rgba(0, 0, 0, 0.2)'
+                1: '5px 5px rgba(0, 0, 0, 0.2)',
             },
             blur: {
                 10: '10px'

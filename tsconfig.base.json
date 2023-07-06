@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@webservices/analytics": ["libs/analytics/src/index.ts"],
       "@webservices/config": ["libs/config/src/index.ts"],
       "@webservices/config/server": ["libs/config/src/server.ts"],
       "@webservices/context-layer": ["libs/context-layer/src/index.ts"],

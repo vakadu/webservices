@@ -17,17 +17,17 @@ const HomePage = () => {
 	// const result = createDocument(
 	// 	Server.databaseID,
 	// 	Server.collectionID,
-	// 	'test1',
-	// 	{
-	// 	  'name': 'Vinod',
-	// 	}
-	//   );
+	// 	'test97',
+	// 		{
+	// 		'name': 'Vinodwww',
+	// 		}
+	// );
 	  
-	//   result.then(function (response) {
-	// 	 console.log(response);
-	//   }, function (error) {
-	// 	 console.log(error);
-	//   });
+	// result.then(function (response) {
+	// 	console.log(response);
+	// }, function (error) {
+	// 	console.log(error);
+	// });
 
 	return (
 		<Fragment>
