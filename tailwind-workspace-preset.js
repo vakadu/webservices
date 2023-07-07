@@ -193,6 +193,9 @@ module.exports = {
             },
             blur: {
                 10: '10px'
+            },
+            transformOrigin: {
+                'top-center': 'top center',
             }
         },
     },
