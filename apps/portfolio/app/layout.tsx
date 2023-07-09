@@ -1,5 +1,6 @@
 import { Jost } from 'next/font/google';
 import localFont from 'next/font/local';
+import { Analytics } from '@vercel/analytics/react';
 
 import './assets/css/global.css';
 import './assets/css/dark.css';
@@ -106,6 +107,7 @@ export default function RootLayout({
 		<html lang="en" className={`${jost.variable} ${sans.className}`}>
 			<body>
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);

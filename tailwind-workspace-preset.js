@@ -180,6 +180,7 @@ module.exports = {
             },
             letterSpacing: {
                 '0.05': '0.05em',
+                '0.07': '0.07em',
                 '0.10': '0.10em'
             },
             borderWidth: {
@@ -190,6 +191,7 @@ module.exports = {
             },
             boxShadow: {
                 1: '5px 5px rgba(0, 0, 0, 0.2)',
+                2: '6px 14px 16px -12px rgba(0, 0, 0, 0.1)'
             },
             blur: {
                 10: '10px'

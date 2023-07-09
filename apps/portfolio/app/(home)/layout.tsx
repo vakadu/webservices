@@ -7,14 +7,31 @@ import { initCursor, stickyNav } from "@webservices/utils";
 import { PortfolioHeader } from "@webservices/ui";
 import { firebaseLogEvent } from "@webservices/analytics";
 
+declare const window: Window &
+   typeof globalThis & {
+        Splitting: any
+}
+
+
 const RootLayout = ({ children }: PropsWithChildren) => {
     const pathname = usePathname();
     const searchParams = useSearchParams();    
 
     useEffect(() => {
-        initCursor();
+        // initCursor();
 
         window.addEventListener("scroll", stickyNav);
+    }, []);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.Splitting = require("splitting");
+        }
+        window.Splitting();
+        // jarallaxAnimation();
+        // document.querySelector("body").className = pageClassName
+        //   ? pageClassName
+        //   : "";
     }, []);
 
     useEffect(() => {

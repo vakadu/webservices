@@ -25,7 +25,7 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 	}, [mode]);
 
 	return (
-		<header className='header absolute top-0 left-0 px-12 lg:px-30 py-12 w-full z-[90] transition-all 
+		<header className='header absolute top-0 left-0 px-12 py-18 lg:px-30 lg:py-24 w-full z-[90] transition-all 
 			duration-0.3 ease-smooth-header'>
 			<div className="flex justify-between items-center max-w-[1300px] mx-auto">
 				<div className="">
@@ -60,7 +60,7 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 						<span className="w-full bg-black dark:bg-white h-2 absolute block top-8 transition-all duration-0.3 ease-smooth-header"/>
 						<span className="w-full bg-black dark:bg-white h-2 absolute block bottom-8 transition-all duration-0.3 ease-smooth-header"/>
 					</a>
-					<div className="menu-overlay fixed w-[512px] h-full z-3 
+					{/* <div className="menu-overlay fixed w-[512px] h-full z-3 
 						min-h-screen right-[-612px] opacity-0 invisible pointer-events-none 
 						transition-all duration-1 ease-smooth-header before:content-['']
 						before:absolute before:top-0 before:left-0 before:w-full before:h-full
@@ -70,7 +70,7 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 						<div className="absolute top-0 left-0 overflow-hidden w-full h-full flex items-center">
 
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</header>

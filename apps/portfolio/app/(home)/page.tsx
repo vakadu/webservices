@@ -5,6 +5,7 @@ import { Fragment, useEffect } from "react";
 import { Server } from "@webservices/config";
 import { useAppwrite } from "@webservices/services";
 import Hero from '../../components/home/hero';
+import Services from "../../components/home/services";
 
 const HomePage = () => {
 
@@ -32,6 +33,7 @@ const HomePage = () => {
 	return (
 		<Fragment>
 			<Hero/>
+			<Services/>
 		</Fragment>
 	);
 }

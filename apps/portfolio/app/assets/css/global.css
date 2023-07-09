@@ -27,7 +27,7 @@ body.no-scroll {
 }
 
 .sticky-header{
-	@apply sticky top-0 transform translate-y-0;
+	@apply sticky top-0 transform translate-y-0 bg-white shadow-2;
 }
 
 .sticky-header.header-in{

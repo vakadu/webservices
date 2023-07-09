@@ -14,7 +14,11 @@ const Hero = () => {
                                         Hello, <b className="text-brand">My Name is</b>
                                     </span>
                                 </div>
-                                <h1 className="font-jost text-[40px] leading-[32px] md:text-90 uppercase tracking-0.05 md:leading-[90px] mt-15 title-shadow text-white font-bold">
+                                <h1 
+                                    className="font-jost text-[40px] leading-[32px] md:text-90 uppercase tracking-0.05 md:leading-[90px] mt-15 title-shadow text-white font-bold"
+                                    data-splitting="chars"
+                                    data-animate="active"
+                                >
                                     <span>
                                         <b className="text-brand">Vinod</b> Kumar
                                     </span>
