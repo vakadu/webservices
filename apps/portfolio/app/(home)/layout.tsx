@@ -3,7 +3,7 @@
 import { PropsWithChildren, Fragment, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-import { initCursor, stickyNav } from "@webservices/utils";
+import { activeAnimation, initCursor, stickyNav } from "@webservices/utils";
 import { PortfolioHeader } from "@webservices/ui";
 import { firebaseLogEvent } from "@webservices/analytics";
 
@@ -18,7 +18,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     const searchParams = useSearchParams();    
 
     useEffect(() => {
-        // initCursor();
+        // activeAnimation();
+        initCursor();
 
         window.addEventListener("scroll", stickyNav);
     }, []);

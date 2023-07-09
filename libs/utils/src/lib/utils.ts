@@ -109,4 +109,26 @@ export function toggleMenu(e: MouseEvent) {
 		}, 1000);
 	}
 	return false;
-}
+};
+
+export const activeAnimation = () => {
+	// The progress_inner variable is assigned the result of document.querySelectorAll(".scroll-animate"), 
+	// which selects all elements with the class "scroll-animate" from the document.
+	const progress_inner = document.querySelectorAll<HTMLElement>(".scroll-animate");
+	// The triggerBottom variable is set to (window.innerHeight / 5) * 5 - 20, 
+	// which calculates a position in the viewport to trigger the animation. 
+	// The exact formula used may depend on specific requirements.
+	const triggerBottom = (window.innerHeight / 5) * 5 - 20;
+	console.log(progress_inner, "=====");
+	
+  
+	progress_inner.forEach((box: HTMLElement) => {
+		// box.getBoundingClientRect().top retrieves the top position of each element relative to the viewport.
+		const boxTop = box.getBoundingClientRect().top;
+		// checks if the top position of the element is above the triggerBottom threshold.
+		if (boxTop < triggerBottom) {
+			box.style.visibility = "visible";
+			box.classList.add("animate__active");
+		}
+	});
+};

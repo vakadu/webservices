@@ -7,7 +7,7 @@ const Services = () => {
             <div>
                 <div className="max-w-[1300px] mx-auto">
                     <div className="text-center">
-                        <h2 className="text-42 leading-42 tracking-0.07 font-semibold uppercase mb-24">
+                        <h2 className="text-32 leading-[32px] lg:text-42 lg:leading-42 tracking-0.07 font-semibold uppercase mb-24">
                             what i do
                         </h2>
                         {/* <div className="uppercase">
