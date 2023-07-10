@@ -26,6 +26,7 @@ const servicesSliderProps = {
 	noSwipingSelector: "a",
 	loop: false,
 	speed: 1000,
+	watchOverflow: true,
 	pagination: {
 		el: ".swiper-pagination",
 		type: "bullets",

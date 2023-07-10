@@ -118,9 +118,7 @@ export const activeAnimation = () => {
 	// The triggerBottom variable is set to (window.innerHeight / 5) * 5 - 20, 
 	// which calculates a position in the viewport to trigger the animation. 
 	// The exact formula used may depend on specific requirements.
-	const triggerBottom = (window.innerHeight / 5) * 5 - 20;
-	console.log(progress_inner, "=====");
-	
+	const triggerBottom = (window.innerHeight / 5) * 5 - 20;	
   
 	progress_inner.forEach((box: HTMLElement) => {
 		// box.getBoundingClientRect().top retrieves the top position of each element relative to the viewport.

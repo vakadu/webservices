@@ -1,11 +1,19 @@
 "use client";
 
 import { Fragment, useEffect } from "react";
+import dynamic from 'next/dynamic';
 
 import { Server } from "@webservices/config";
 import { useAppwrite } from "@webservices/services";
 import Hero from '../../components/home/hero';
-import Services from "../../components/home/services";
+
+const Services = dynamic(() => import('../../components/home/services'), {
+	loading: () => <p>Loading...</p>,
+});
+
+const Skills = dynamic(() => import('../../components/home/skills'), {
+	loading: () => <p>Loading...</p>,
+});
 
 const HomePage = () => {
 
@@ -34,6 +42,7 @@ const HomePage = () => {
 		<Fragment>
 			<Hero/>
 			<Services/>
+			<Skills/>
 		</Fragment>
 	);
 }

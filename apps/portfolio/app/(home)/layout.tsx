@@ -19,16 +19,12 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 
     useEffect(() => {
         // activeAnimation();
-        initCursor();
+        // initCursor();
 
         window.addEventListener("scroll", stickyNav);
     }, []);
 
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.Splitting = require("splitting");
-        }
-        window.Splitting();
         // jarallaxAnimation();
         // document.querySelector("body").className = pageClassName
         //   ? pageClassName
@@ -53,7 +49,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
                     { children }
                 </div>
             </div>
-            <div className="cursor fixed top-0 left-0 w-[30px] h-[30px] bg-grey-light border border-transparent pointer-events-none rounded-full" />
+            {/* <div className="cursor z-10 fixed top-0 left-0 w-[30px] h-[30px] bg-grey-light border border-transparent pointer-events-none rounded-full" /> */}
         </Fragment>
     )
 };
