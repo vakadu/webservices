@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+      	--color-brand: 36 130 50;
+    }
+
+    html,
+    body {
+        @apply font-sans font-normal text-secondary;
+    }
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	@apply bg-beige;
+}

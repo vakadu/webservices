@@ -198,7 +198,7 @@ module.exports = {
             },
             transformOrigin: {
                 'top-center': 'top center',
-            }
+            },
         },
     },
     variants: {
