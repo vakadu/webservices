@@ -24,7 +24,7 @@ const ColorPicker = () => {
     const { color, oddColor } = getRandomColors();
     const random = Math.floor(Math.random() * (defaultgrid * defaultgrid)) + 1;
 
-    const handleBox = (i) => {
+    const handleBox = (i: number) => {
         if(random === i) {
             if(defaultgrid > 4) {
                 setDefaultGrid((prev) => (prev - 1))
