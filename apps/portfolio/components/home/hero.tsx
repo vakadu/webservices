@@ -1,7 +1,10 @@
+import { useScrollTo } from "@webservices/hooks";
 import { LinkedinIcon, TwitterIcon } from "@webservices/icons";
 import { Button } from "@webservices/ui";
 
 const Hero = () => {
+    const { handleScroll } = useScrollTo();
+
     return(
         <section className="pb-[80px] bg-transparent bg-[linear-gradient(0deg,_#FFFFFF_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]">
             <div className="min-h-screen flex items-center max-w-[1300px] mx-auto">
@@ -62,6 +65,7 @@ const Hero = () => {
                                 </Button>
                                 <a 
                                     className="uppercase btn btn-link pl-0 pt-40 lg:pt-0 lg:pl-72 block lg:inline-block"
+                                    onClick={() => handleScroll("skills")}
                                 >
                                     My Skills
                                 </a>

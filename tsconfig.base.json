@@ -19,6 +19,7 @@
       "@webservices/config": ["libs/config/src/index.ts"],
       "@webservices/config/server": ["libs/config/src/server.ts"],
       "@webservices/context-layer": ["libs/context-layer/src/index.ts"],
+      "@webservices/hooks": ["libs/hooks/src/index.ts"],
       "@webservices/icons": ["libs/icons/src/index.ts"],
       "@webservices/icons/server": ["libs/icons/src/server.ts"],
       "@webservices/services": ["libs/services/src/index.ts"],

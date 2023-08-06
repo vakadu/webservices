@@ -4,10 +4,10 @@
 
 @layer base {
     :root {
-      	--color-brand: 36 130 50;
+      	--color-brand: 17 122 101;
     }
 
-    html,
+	html,
     body {
         @apply font-sans font-normal text-secondary;
     }

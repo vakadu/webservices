@@ -23,7 +23,6 @@ const Services = () => {
                 <div className="max-w-[1300px] mx-auto overflow-hidden px-16">
                     <Swiper
                         {...servicesSliderProps}
-                        pagination
                         className="w-full h-full swiper-container text-center"
                     >
                         <SwiperSlide className="flex justify-center items-center">

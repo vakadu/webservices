@@ -104,7 +104,7 @@ export default function RootLayout({
   	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${jost.variable} ${sans.className}`}>
+		<html lang="en" className={`${jost.variable} ${sans.className} font-jost`}>
 			<body>
 				{children}
 				<Analytics />

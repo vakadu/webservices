@@ -27,16 +27,11 @@ const servicesSliderProps = {
 	loop: false,
 	speed: 1000,
 	watchOverflow: true,
-	pagination: {
-		el: ".swiper-pagination",
-		type: "bullets",
-		clickable: true,
-	} as any,
 	navigation: false,
 	breakpoints: {
 	  // when window width is >= 320px
 	  0: {
-			slidesPerView: 1,
+			slidesPerView: 1.2,
 			spaceBetween: 20,
 	  },
 	  // when window width is >= 480px
