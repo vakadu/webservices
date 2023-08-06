@@ -1,26 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { servicesSliderProps } from "@webservices/utils";
+import { PortfolioSectionHeader } from "@webservices/ui";
 
 const Services = () => {
     
     return(
         <section className="pb-[80px] bg-transparent bg-[linear-gradient(180deg,_#FFFFFF_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]">
-            <div>
-                <div className="max-w-[1300px] mx-auto">
-                    <div className="text-center">
-                        <h2 className="text-32 leading-[32px] lg:text-42 lg:leading-42 tracking-0.07 font-semibold uppercase mb-24">
-                            what i do
-                        </h2>
-                        {/* <div className="uppercase">
-                            <span className="text-16 text-brand font-semibold">my</span>
-                            <b className="font-jost ml-10 text-18">services</b>
-                        </div> */}
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div className="max-w-[1300px] mx-auto overflow-hidden px-16">
+            <article className="max-w-[1300px] mx-auto">
+                <PortfolioSectionHeader
+                    title="what i do"
+                />
+                <div className="overflow-hidden px-16 lg:px-0">
                     <Swiper
                         {...servicesSliderProps}
                         className="w-full h-full swiper-container text-center"
@@ -59,7 +50,7 @@ const Services = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-            </div>
+            </article>
         </section>
     )
 };

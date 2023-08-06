@@ -15,6 +15,10 @@ const Skills = dynamic(() => import('../../components/home/skills'), {
 	loading: () => <p>Loading...</p>,
 });
 
+const Resume = dynamic(() => import('../../components/home/resume'), {
+	loading: () => <p>Loading...</p>,
+});
+
 const HomePage = () => {
 
 	useEffect(() => {
@@ -42,7 +46,8 @@ const HomePage = () => {
 		<Fragment>
 			<Hero/>
 			<Services/>
-			<Skills/>
+			{/* <Skills/> */}
+			<Resume/>
 		</Fragment>
 	);
 }
