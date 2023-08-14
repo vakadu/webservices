@@ -1,3 +1,5 @@
+export * from './lib/desktop-icon/desktop-icon';
+export * from './lib/phone-icon/phone-icon';
 export * from './lib/linkedin-icon/linkedin-icon';
 export * from './lib/twitter-icon/twitter-icon';
 export * from './lib/dark-icon/dark-icon';

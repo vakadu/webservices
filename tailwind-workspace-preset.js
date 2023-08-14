@@ -115,6 +115,7 @@ module.exports = {
             },
             transitionDuration: {
                 '0.3': '0.3s',
+                '0.5': '0.5s',
                 '0.6': '0.6s',
                 '0.7': '0.7s',
                 '1': '1s'
