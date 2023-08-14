@@ -2,6 +2,8 @@
 
 import { PropsWithChildren, Fragment, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { activeAnimation, initCursor, stickyNav } from "@webservices/utils";
 import { PortfolioHeader } from "@webservices/ui";
@@ -40,6 +42,10 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 
         firebaseLogEvent('screen_view', { newPageViewPath });
     }, [pathname, searchParams]);
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     return(
         <Fragment>

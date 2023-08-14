@@ -11,12 +11,17 @@ const Services = () => {
                 <PortfolioSectionHeader
                     title="what i do"
                 />
-                <div className="overflow-hidden px-16 lg:px-0">
+                <section className="overflow-hidden px-16 lg:px-0">
                     <Swiper
                         {...servicesSliderProps}
                         className="w-full h-full swiper-container text-center"
                     >
-                        <SwiperSlide className="flex justify-center items-center">
+                        <SwiperSlide 
+                            className="flex justify-center items-center"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                            data-aos-delay="300"
+                        >
                             <div className="relative overflow-hidden px-30 py-35 rounded-[20px] bg-white">
                                 <div className="text-13 font-semibold tracking-0.05 uppercase mb-24">
                                     <span> Web Development </span>
@@ -25,14 +30,19 @@ const Services = () => {
                                     <span> React </span>
                                 </h5>
                                 <div className=" min-h-[134px] mt-24">
-                                    <div>
+                                    <p>
                                         Building user interfaces and front-end components for web applications using React. 
                                         Writing efficient, reusable, and scalable code to implement the UI design and user interactions.
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="flex justify-center items-center">
+                        <SwiperSlide 
+                            className="flex justify-center items-center"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                            data-aos-delay="400"
+                        >
                             <div className="relative overflow-hidden px-30 py-35 rounded-[20px] bg-white">
                                 <div className="text-13 font-semibold tracking-0.05 uppercase mb-24">
                                     <span> Mobile Development </span>
@@ -40,16 +50,16 @@ const Services = () => {
                                 <h5 className="text-24 font-semibold">
                                     <span> React Native & Flutter</span>
                                 </h5>
-                                <div className=" min-h-[134px] mt-24">
-                                    <div>
+                                <div className="min-h-[134px] mt-24">
+                                    <p>
                                         Using React Native and Flutter to build cross-platform mobile applications. 
                                         Write code once and create apps that run natively on both iOS and Android platforms.
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                </div>
+                </section>
             </article>
         </section>
     )

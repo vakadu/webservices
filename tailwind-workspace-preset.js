@@ -126,6 +126,7 @@ module.exports = {
                 headerAnimation: 'headerAnimate 0.8s cubic-bezier(0.3, 0, 0.3, 1) 0s forwards',
                 'drip-expand': 'expand 300ms ease-in forwards',
 				'drip-expand-large': 'expand-large 600ms ease-in forwards',
+                'slide-up-down': 'slide-move-up-down 4s infinite both'
             },
             keyframes: {
                 headerAnimate: {
@@ -167,6 +168,17 @@ module.exports = {
 						transform: 'scale(96)',
 						opacity: 0,
 					},
+                },
+                'slide-move-up-down': {
+                    from: {
+                        transform: 'translateY(-6px)'
+                    },
+                    "50%": {
+                        transform: 'translateY(6px)'
+                    },
+                    top: {
+                        transform: 'translateY(-6px)'
+                    }
                 }
             },
             zIndex: {

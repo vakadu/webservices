@@ -2,20 +2,13 @@ import { PortfolioSectionHeader } from "@webservices/ui";
 
 const data = [
     {
-        id: 1,
-        title: "Indian Institue of Technology - Roorkee",
-        company: "Msc.Int.Chemistry",
-        dec: "",
-        startYear: "2010",
-        endYear: "2015",
-    },
-    {
         id: 2,
         title: "Software Developer",
         company: "Kwiqpick Services India Pvt. Ltd",
         dec: "",
         startYear: "2017",
         endYear: "2018",
+        delayAnimation: ""
     },
     {
         id: 3,
@@ -24,6 +17,7 @@ const data = [
         dec: "",
         startYear: "2018",
         endYear: "2019",
+        delayAnimation: "100"
     },
     {
         id: 4,
@@ -32,6 +26,7 @@ const data = [
         dec: "",
         startYear: "2019",
         endYear: "2021",
+        delayAnimation: "200"
     },
     {
         id: 5,
@@ -39,13 +34,14 @@ const data = [
         company: "Arzooo",
         dec: "",
         startYear: "2021",
-        endYear: "2023",
+        endYear: false,
+        delayAnimation: "300"
     },
 ];
 
 const Resume = () => {
-    const headerClasses = "text-center capitalize text-24 font-medium pb-24 border-b-2 border-black";
-
+    const headerClasses = "capitalize text-24 font-medium pb-24";
+    
     return(
         <section 
             id='resume'
@@ -53,26 +49,38 @@ const Resume = () => {
         >
             <article className="max-w-[1300px] mx-auto">
                 <PortfolioSectionHeader
-                    title="resume"
+                    title="experience"
                 />
-                <div className="">
-                    <h5 className={headerClasses}>education & experience</h5>
-                    <div>
-                        {
-                            data.map((res) => {
-                                return(
-                                    <div
-                                        key={res.id}
-                                    >
-                                        <h6>
-                                            { res.title }
+                <section className="">
+                    {
+                        data.map((res) => {
+                            return(
+                                <section
+                                    key={res.id}
+                                    className="grid grid-cols-3 px-32 py-24 max-w-[1100px] mx-auto"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1200"
+                                    data-aos-delay={res.delayAnimation}
+                                >
+                                    <article className="col-span-1">
+                                        <h2 className="text-18 font-semibold pb-6">{res.title}</h2>
+                                        <h6 className="text-16 pb-6 font-medium">{res.startYear} -{" "}
+                                            {res.endYear ? (
+                                                res.endYear
+                                            ) : (
+                                                <b>Present</b>
+                                            )}
                                         </h6>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
+                                        <span className="bg-brand text-white px-6 text-14 font-semibold rounded-4 py-4">Full Time</span>
+                                    </article>
+                                    <article className="col-span-2">
+                                        <h4 className="text-16 font-semibold">{res.company}</h4>
+                                    </article>
+                                </section>
+                            )
+                        })
+                    }
+                </section>
             </article>
         </section>
     )
