@@ -1,3 +1,4 @@
+export * from './lib/input/input';
 export * from './lib/portfolio-section-header/portfolio-section-header';
 export * from './lib/button/button';
 export * from './lib/portfolio-header/portfolio-header';

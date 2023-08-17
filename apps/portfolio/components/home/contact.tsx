@@ -1,5 +1,6 @@
 import { CallIcon, MailIcon, MapIcon } from "@webservices/icons";
 import { PortfolioSectionHeader } from "@webservices/ui";
+import Form from "./form";
 
 const data = [
     {
@@ -88,8 +89,8 @@ const Contact = () => {
                             })
                         }
                     </article>
-                    <article className="col-span-1">
-
+                    <article className="col-span-2">
+                        <Form/>
                     </article>
                 </section>
              </article>

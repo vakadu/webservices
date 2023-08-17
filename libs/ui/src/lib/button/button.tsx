@@ -121,6 +121,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
 			<button 
 				ref={buttonRef}
 				onClick={clickHandler}
+				disabled={disabled}
 				className={cn(
 					'relative inline-flex shrink-0 items-center justify-center overflow-hidden text-center outline-none transition-all',
 					className,

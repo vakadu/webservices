@@ -15,6 +15,9 @@ module.exports = {
                 },
                 green: {
                     dark: '#1E8449'
+                },
+                red: {
+                    dark: "#922B21"
                 }
             },
             fontSize: {
