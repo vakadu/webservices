@@ -14,7 +14,7 @@ const Hero = () => {
                     <article className="text-center md:text-left">
                         <section className="max-w-[740px] mb-[420px] lg:mb-0">
                             <h4 
-                                className="text-14 md:text-15 uppercase tracking-0.10 dark:text-white"
+                                className="text-14 md:text-15 uppercase tracking-0.10 dark:text-white font-jost"
                                 data-aos="fade-up"
                                 data-aos-duration="1200"
                             >
@@ -33,7 +33,7 @@ const Hero = () => {
                                 </span>
                             </h1>
                             <h4 
-                                className="text-14 md:text-15 uppercase font-medium tracking-0.05 flex items-center mt-32 justify-center lg:justify-start"
+                                className="text-14 md:text-15 uppercase font-medium tracking-0.05 flex items-center mt-32 justify-center lg:justify-start font-jost"
                                 data-aos="fade-up"
                                 data-aos-duration="1200"
                                 data-aos-delay="200"

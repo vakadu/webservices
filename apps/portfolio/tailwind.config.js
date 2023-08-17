@@ -16,8 +16,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 			  	jost: ['var(--font-jost)'],
-			  	satisfy: ['var(--font-satisfy)'],
-				sans: ['var(--font-sans)']
+				sathoshi: ['var(--font-sathoshi)']
 			},
 			colors: {
 				brand: 'rgb(var(--color-brand) / <alpha-value>)',

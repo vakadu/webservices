@@ -1,3 +1,6 @@
+export * from './lib/call-icon/call-icon';
+export * from './lib/mail-icon/mail-icon';
+export * from './lib/map-icon/map-icon';
 export * from './lib/desktop-icon/desktop-icon';
 export * from './lib/phone-icon/phone-icon';
 export * from './lib/linkedin-icon/linkedin-icon';

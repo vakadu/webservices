@@ -27,11 +27,15 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 	return (
 		<header className='header absolute top-0 left-0 px-12 py-18 lg:px-30 lg:py-24 w-full z-[90] transition-all 
 			duration-0.3 ease-smooth-header'>
-			<div className="flex justify-between items-center max-w-[1300px] mx-auto">
-				<div className="">
-					<LogoVinod/>
-				</div>
-				<div className="flex-1 flex justify-end items-center">
+			<section className="flex justify-between items-center max-w-[1300px] mx-auto">
+				<LogoVinod/>
+				<article className="flex-1 flex justify-end items-center">
+					<a href="tel:+919972380619" className="mr-32 text-14 font-semibold">
+						+91 - 9972380619
+					</a>
+					<a href="mailto:vakadu10@gmail.com" className="mr-40 text-14 font-semibold">
+						vakadu10@gmail.com
+					</a>
 					<a
 						href="#"
 						className={`
@@ -52,14 +56,14 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 							}
 						</span>
 					</a>
-					<a
+					{/* <a
 						href="#"
 						className="h-30 w-28 relative lg:mx-12 menu-btn z-4"
 						onClick={(e) => toggleMenu(e)}
 					>
 						<span className="w-full bg-black dark:bg-white h-2 absolute block top-8 transition-all duration-0.3 ease-smooth-header"/>
 						<span className="w-full bg-black dark:bg-white h-2 absolute block bottom-8 transition-all duration-0.3 ease-smooth-header"/>
-					</a>
+					</a> */}
 					{/* <div className="menu-overlay fixed w-[512px] h-full z-3 
 						min-h-screen right-[-612px] opacity-0 invisible pointer-events-none 
 						transition-all duration-1 ease-smooth-header before:content-['']
@@ -71,8 +75,8 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 
 						</div>
 					</div> */}
-				</div>
-			</div>
+				</article>
+			</section>
 		</header>
 	);
 }

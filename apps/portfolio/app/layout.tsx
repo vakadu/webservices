@@ -8,39 +8,35 @@ import './assets/css/vendors/animate.css';
 import './assets/css/vendors/splitting.css';
 import './assets/css/vendors/swiper.css';
 
-const sans = localFont({
+const sathoshi = localFont({
 	src: [
 		{
-			path: './assets/fonts/sans/extra-light.otf',
-			weight: '200',
-			style: 'normal',
-		},
-		{
-			path: './assets/fonts/sans/light.otf',
+			path: './assets/fonts/sathoshi/Satoshi-Light.otf',
 			weight: '300',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/regular.otf',
+			path: './assets/fonts/sathoshi/Satoshi-Regular.otf',
 			weight: '400',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/medium.otf',
+			path: './assets/fonts/sathoshi/Satoshi-Medium.otf',
 			weight: '500',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/semibold.otf',
+			path: './assets/fonts/sathoshi/Satoshi-Bold.otf',
 			weight: '600',
 			style: 'normal',
 		},
 		{
-			path: './assets/fonts/sans/bold.otf',
+			path: './assets/fonts/sathoshi/Satoshi-Black.otf',
 			weight: '700',
 			style: 'normal',
 		},
 	],
+	variable: '--font-sathoshi'
 })
 
 export const metadata = {
@@ -104,7 +100,7 @@ export default function RootLayout({
   	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={`${jost.variable} ${sans.className} font-jost`}>
+		<html lang="en" className={`${sathoshi.variable} ${jost.variable} font-sathoshi`}>
 			<body>
 				{children}
 				<Analytics />

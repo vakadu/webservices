@@ -49,12 +49,12 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 
     return(
         <Fragment>
-            <div className="relative min-h-[50vh]">
+            <main className="relative min-h-[50vh]">
                 <PortfolioHeader/>
-                <div className="relative">
+                <section className="relative">
                     { children }
-                </div>
-            </div>
+                </section>
+            </main>
             {/* <div className="cursor z-10 fixed top-0 left-0 w-[30px] h-[30px] bg-grey-light border border-transparent pointer-events-none rounded-full" /> */}
         </Fragment>
     )

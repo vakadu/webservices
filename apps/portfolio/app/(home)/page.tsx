@@ -19,6 +19,10 @@ const Resume = dynamic(() => import('../../components/home/resume'), {
 	loading: () => <p>Loading...</p>,
 });
 
+const Contact = dynamic(() => import('../../components/home/contact'), {
+	loading: () => <p>Loading...</p>,
+});
+
 const HomePage = () => {
 
 	useEffect(() => {
@@ -48,6 +52,7 @@ const HomePage = () => {
 			<Services/>
 			{/* <Skills/> */}
 			<Resume/>
+			<Contact/>
 		</Fragment>
 	);
 }
