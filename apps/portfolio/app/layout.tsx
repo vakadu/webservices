@@ -4,8 +4,6 @@ import { Analytics } from '@vercel/analytics/react';
 
 import './assets/css/global.css';
 import './assets/css/dark.css';
-import './assets/css/vendors/animate.css';
-import './assets/css/vendors/splitting.css';
 import './assets/css/vendors/swiper.css';
 
 const sathoshi = localFont({

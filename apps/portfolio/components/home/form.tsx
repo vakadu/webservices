@@ -25,28 +25,36 @@ const Form = () => {
             className=""  
             onSubmit={handleSubmit(onSubmit)}
         >
-            <section className="grid grid-cols-2 gap-24">
+            <section 
+                className="grid grid-cols-2 gap-24"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="400"
+            >
                 <Input
                     {...register("name", { required: "name is required" })}
-                    placeholder="Enter your Name"
+                    placeholder="EX. Vinod"
                     type="text"
                     inputMode="text"
-                    label="Name"
+                    label="Name*"
                     containerClasses="col-span-1"
                     errorMessage={errors["name"]?.message as string}
                 />
                 <Input
                     {...register("email", { required: "email is required" })}
-                    label="Email Address"
+                    label="Email Address*"
                     containerClasses="col-span-1"
-                    placeholder="Enter your Email"
+                    placeholder="Ex. vinod@gmail.com"
                     type="text"
-                    inputMode="email"
+                    inputMode="text"
                     errorMessage={errors["email"]?.message as string}
                 />
                 <article className="col-span-2 ">
+                    <label className={`text-14 leading-[32px] font-semibold ${errors["message"]?.message && errors["message"]?.message !== "" ? 'text-red-dark' : 'text-grey-textDark dark:text-white'}`}>
+                        Your Message*
+                    </label>
                     <textarea
-                        className={`h-[100px] border ring-1 py-12 resize-none outline-none w-full block transition-all duration-0.6 ease-smooth rounded-4 px-12 text-16 ${errors["message"]?.message && errors["message"]?.message !== "" ? "border-red-dark focus:ring-red-dark text-red-dark placeholder-red-dark" : "border-grey-light focus:ring-brand"}`}
+                        className={`h-[100px] border py-12 resize-none outline-none w-full block transition-all duration-0.6 ease-smooth focus:ring-1 focus:ring-brand rounded-4 px-12 text-16 ${errors["message"]?.message && errors["message"]?.message !== "" ? "border-red-dark focus:ring-red-dark text-red-dark placeholder-red-dark" : "border-grey-light"}`}
                         {...register("message", { required: "message is required" })}
                     >
 
@@ -61,7 +69,10 @@ const Form = () => {
             </section>
             <Button 
                 className="mt-24"
-                disabled={!isDirty || !isValid}
+                // disabled={!isDirty || !isValid}
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="500"
             >
                 Send Message
             </Button>

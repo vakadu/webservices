@@ -1,7 +1,6 @@
 import TextLoop from "react-text-loop";
 
 import { useScrollTo } from "@webservices/hooks";
-import { LinkedinIcon, TwitterIcon } from "@webservices/icons";
 import { Button } from "@webservices/ui";
 
 const Hero = () => {
@@ -54,29 +53,6 @@ const Hero = () => {
                                     Creating Awesome Apps and Websites. Your Vision, Brought to Life by Me.
                                 </p>
                             </article>
-                            {/* <article 
-                                className="mt-32 flex justify-center lg:justify-start"
-                                data-aos="fade-up"
-                                data-aos-duration="1200"
-                                data-aos-delay="400"
-                            >
-                                <a 
-                                    target="_blank" 
-                                    rel="nofollow" 
-                                    href="https://twitter.com/vakadu"
-                                    className="mr-16 relative inline-block"
-                                >
-                                    <TwitterIcon className="w-24 h-24"/>
-                                </a>
-                                <a 
-                                    target="_blank" 
-                                    rel="nofollow" 
-                                    href="https://www.linkedin.com/in/vinod-kumar-6073b4117/"
-                                    className="mr-16 relative inline-block"
-                                >
-                                    <LinkedinIcon className="w-24 h-24"/>
-                                </a>
-                            </article> */}
                         </section>
                         <section
                             data-aos="fade-up"

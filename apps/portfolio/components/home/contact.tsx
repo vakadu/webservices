@@ -1,3 +1,6 @@
+import { Server } from "@webservices/config";
+import { useAppwrite } from "@webservices/services";
+
 import { CallIcon, MailIcon, MapIcon } from "@webservices/icons";
 import { PortfolioSectionHeader } from "@webservices/ui";
 import Form from "./form";
@@ -26,9 +29,27 @@ const data = [
 ];
 
 const Contact = () => {
+
+    	// const { createDocument } = useAppwrite();
+
+	// const result = createDocument(
+	// 	Server.databaseID,
+	// 	Server.collectionID,
+	// 	'test97',
+	// 		{
+	// 		'name': 'Vinodwww',
+	// 		}
+	// );
+	  
+	// result.then(function (response) {
+	// 	console.log(response);
+	// }, function (error) {
+	// 	console.log(error);
+	// });
+
     return(
         <section className="pb-[80px] bg-transparent bg-[linear-gradient(0deg,_#FFFFFF_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]">
-             <article className="max-w-[1300px] mx-auto">
+            <article className="max-w-[1300px] mx-auto">
                 <PortfolioSectionHeader
                     title="contact me"
                 />

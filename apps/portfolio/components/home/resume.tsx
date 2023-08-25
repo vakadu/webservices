@@ -39,9 +39,7 @@ const data = [
     },
 ];
 
-const Resume = () => {
-    const headerClasses = "capitalize text-24 font-medium pb-24";
-    
+const Resume = () => {    
     return(
         <section 
             id='resume'

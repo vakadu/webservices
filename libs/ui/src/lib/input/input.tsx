@@ -30,11 +30,11 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 		}		
 
 		return(
-			<div className={`relative ${containerClasses}`}>
+			<section className={`relative ${containerClasses}`}>
 				<label className={`text-14 leading-[32px] font-semibold ${labelClass}`}>
 					{ label }
 				</label>
-				<div className='relative'>
+				<article className='relative'>
 					<input 
 						{ ...rest }
 						ref={ref}
@@ -43,14 +43,14 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 						placeholder={placeholder}
 						className={`h-[48px] border border-grey-stroke focus:ring-1 focus:shadow-sm outline-none w-full block transition-all duration-0.6 ease-smooth rounded-4 px-12 text-16 ${parentClass}`} 
 					/>	
-				</div>
+				</article>
 				{
 					errorMessage && errorMessage !== '' &&
 						<p className='text-14 text-red-dark mt-4'>
 							{ errorMessage }
 						</p>
 				}
-			</div>
+			</section>
 		)
 	}
 );

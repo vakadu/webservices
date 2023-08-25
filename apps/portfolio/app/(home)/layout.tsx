@@ -5,14 +5,9 @@ import { usePathname, useSearchParams } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { activeAnimation, initCursor, stickyNav } from "@webservices/utils";
-import { PortfolioHeader } from "@webservices/ui";
+import { stickyNav } from "@webservices/utils";
+import { PortfolioFooter, PortfolioHeader } from "@webservices/ui";
 import { firebaseLogEvent } from "@webservices/analytics";
-
-declare const window: Window &
-   typeof globalThis & {
-        Splitting: any
-}
 
 
 const RootLayout = ({ children }: PropsWithChildren) => {
@@ -20,17 +15,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     const searchParams = useSearchParams();    
 
     useEffect(() => {
-        // activeAnimation();
-        // initCursor();
-
         window.addEventListener("scroll", stickyNav);
-    }, []);
-
-    useEffect(() => {
-        // jarallaxAnimation();
-        // document.querySelector("body").className = pageClassName
-        //   ? pageClassName
-        //   : "";
     }, []);
 
     useEffect(() => {
@@ -54,8 +39,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
                 <section className="relative">
                     { children }
                 </section>
+                <PortfolioFooter/>
             </main>
-            {/* <div className="cursor z-10 fixed top-0 left-0 w-[30px] h-[30px] bg-grey-light border border-transparent pointer-events-none rounded-full" /> */}
         </Fragment>
     )
 };
