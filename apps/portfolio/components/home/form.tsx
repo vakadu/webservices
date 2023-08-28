@@ -35,6 +35,7 @@ const Form = () => {
                 docId,
                 { name, email, message }
             );
+            reset();
             setLoading(false);
             toast.success('Form submitted successfully.');
         } catch (error) {
