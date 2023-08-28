@@ -3,8 +3,9 @@
 import { PropsWithChildren, Fragment, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import AOS from "aos";
-import "aos/dist/aos.css";
+import { Toaster } from 'react-hot-toast';
 
+import "aos/dist/aos.css";
 import { stickyNav } from "@webservices/utils";
 import { PortfolioFooter, PortfolioHeader } from "@webservices/ui";
 import { firebaseLogEvent } from "@webservices/analytics";
@@ -41,6 +42,20 @@ const RootLayout = ({ children }: PropsWithChildren) => {
                 </section>
                 <PortfolioFooter/>
             </main>
+            <Toaster 
+                position="bottom-center"
+                reverseOrder={false}
+                toastOptions={{
+                    style: {
+                        borderRadius: '10px',
+                        background: '#333',
+                        color: '#fff',
+                    },
+                    success: {
+                        duration: 3000,
+                    },
+                }}
+            />
         </Fragment>
     )
 };

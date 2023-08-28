@@ -1,8 +1,15 @@
+"use client";
+
+import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import toast from 'react-hot-toast';
 
+import { Server } from "@webservices/config";
+import { useAppwrite } from "@webservices/services";
 import { Button, Input } from "@webservices/ui";
+import { randomStringGenerator } from "@webservices/utils";
 
 const schema = yup.object().shape({
     name: yup.string().required(),
@@ -11,13 +18,29 @@ const schema = yup.object().shape({
 });
 
 const Form = () => {
-    const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm({
+    const { createDocument } = useAppwrite();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(schema),
     });
+    const [loading, setLoading] = useState(false);
 
-    const onSubmit = (values: { email: string, message: string, name: string }) => {
-        console.log(values);
-        
+    const onSubmit = async (values: { email: string, message: string, name: string }) => {
+        const docId = randomStringGenerator(10);
+        setLoading(true);
+        try {
+            const { name, email, message } = values;
+            const response = await createDocument(
+                Server.databaseID,
+                '64dd9f5f190953d43866',
+                docId,
+                { name, email, message }
+            );
+            setLoading(false);
+            toast.success('Form submitted successfully.');
+        } catch (error) {
+            setLoading(false);
+            toast.error('Something went wrong.Please try again');
+        }
     };
 
     return(
@@ -69,10 +92,10 @@ const Form = () => {
             </section>
             <Button 
                 className="mt-24"
-                // disabled={!isDirty || !isValid}
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="500"
+                disabled={loading}
             >
                 Send Message
             </Button>
