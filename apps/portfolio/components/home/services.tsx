@@ -35,11 +35,11 @@ const Services = () => {
     
     return(
         <section className="pb-[80px] bg-transparent bg-[linear-gradient(180deg,_#FFFFFF_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]">
-            <article className="max-w-[1300px] mx-auto">
+            <article className="max-w-[1300px] mx-auto px-16 md:px-24">
                 <PortfolioSectionHeader
                     title="what i do"
                 />
-                <section className="relative lg:px-0 grid grid-cols-3 gap-24">
+                <section className="relative lg:px-0 grid md:grid-cols-3 gap-24">
                     {
                         data?.map((service) => {
                             const classes = `col-span-1 p-42 after:absolute cursor-pointer

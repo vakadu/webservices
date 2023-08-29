@@ -28,11 +28,11 @@ const data = [
 const Contact = () => {
     return(
         <section className="pb-[80px] bg-transparent bg-[linear-gradient(0deg,_#FFFFFF_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]">
-            <article className="max-w-[1300px] mx-auto">
+            <article className="max-w-[1300px] mx-auto px-16 md:px-24">
                 <PortfolioSectionHeader
                     title="contact me"
                 />
-                <section className="relative lg:px-0 grid grid-cols-3 gap-24">
+                <section className="relative lg:px-0 grid md:grid-cols-3 gap-24">
                     <article className="col-span-1">
                         <h2 
                             className="text-24 font-medium"

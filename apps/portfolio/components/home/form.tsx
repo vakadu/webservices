@@ -50,7 +50,7 @@ const Form = () => {
             onSubmit={handleSubmit(onSubmit)}
         >
             <section 
-                className="grid grid-cols-2 gap-24"
+                className="grid grid-cols-1 md:grid-cols-2 gap-24"
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="400"

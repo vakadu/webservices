@@ -45,7 +45,7 @@ const Resume = () => {
             id='experience'
             className="pb-[80px] bg-transparent bg-[linear-gradient(180deg,_#F0EBE3_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]"
         >
-            <article className="max-w-[1300px] mx-auto">
+            <article className="max-w-[1300px] mx-auto px-16 md:px-24">
                 <PortfolioSectionHeader
                     title="experience"
                 />

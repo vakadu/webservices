@@ -6,7 +6,7 @@ export interface PortfolioFooterProps {}
 export function PortfolioFooter(props: PortfolioFooterProps) {
 	return (
 		<footer className="bg-white py-80">
-			<section className="max-w-[1300px] mx-auto flex justify-between items-center">
+			<section className="max-w-[1300px] mx-auto flex justify-between items-center px-16 md:px-24">
 				<article 
 					className="grid grid-cols-2 gap-12"
 				>

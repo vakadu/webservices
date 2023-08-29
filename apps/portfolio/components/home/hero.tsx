@@ -8,7 +8,7 @@ const Hero = () => {
 
     return(
         <section className="pb-[80px] bg-transparent bg-[linear-gradient(0deg,_#FFFFFF_0%,_#F0EBE3_100%)] dark:bg-[linear-gradient(0deg,_#31363c_0%,_#222831_100%)]">
-            <article className="min-h-screen flex items-center max-w-[1300px] mx-auto">
+            <article className="min-h-screen flex items-center max-w-[1300px] mx-auto px-16 md:px-24">
                 <section className="relative pt-[120px] w-full">
                     <article className="text-center md:text-left">
                         <section className="max-w-[740px] mb-[420px] lg:mb-0">
@@ -53,7 +53,7 @@ const Hero = () => {
                                 </TextLoop>
                             </h4>
                         </section>
-                        <section className="max-w-[620px] py-40">
+                        <section className="lg:max-w-xs py-40">
                             <article
                                 data-aos="fade-up"
                                 data-aos-duration="1200"

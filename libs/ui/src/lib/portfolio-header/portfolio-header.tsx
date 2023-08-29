@@ -29,14 +29,14 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 			duration-0.3 ease-smooth-header'>
 			<section className="flex justify-between items-center max-w-[1300px] mx-auto">
 				<LogoVinod/>
-				<article className="flex-1 flex justify-end items-center">
-					<a href="tel:+919972380619" className="mr-32 text-14 font-semibold">
+				<article className="flex-1 flex flex-col md:flex-row justify-end items-end md:items-center">
+					<a href="tel:+919972380619" className="md:mr-32 text-14 font-semibold">
 						+91 - 9972380619
 					</a>
-					<a href="mailto:vakadu10@gmail.com" className="mr-40 text-14 font-semibold">
+					<a href="mailto:vakadu10@gmail.com" className="md:mr-40 text-14 font-semibold">
 						vakadu10@gmail.com
 					</a>
-					<a
+					{/* <a
 						href="#"
 						className={`
 							skin-switcher relative inline-block text-center align-middle 
@@ -55,7 +55,7 @@ export function PortfolioHeader(props: PortfolioHeaderProps) {
 									<DarkIcon className="max-w-[25px]"/>
 							}
 						</span>
-					</a>
+					</a> */}
 					{/* <a
 						href="#"
 						className="h-30 w-28 relative lg:mx-12 menu-btn z-4"
