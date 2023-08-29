@@ -28,9 +28,19 @@ const Hero = () => {
                                 data-aos-delay="100"
                             >
                                 <span>
-                                    <b className="text-brand">Vinod</b> Kumar
+                                    <b className="text-brand">Vinod</b>
                                 </span>
                             </h1>
+                            {/* <h1 
+                                className="font-jost text-[40px] leading-[32px] md:text-90 uppercase tracking-0.05 md:leading-[90px] mt-15 title-shadow text-white font-bold"
+                                data-aos="fade-up"
+                                data-aos-duration="1200"
+                                data-aos-delay="100"
+                            >
+                                <span>
+                                    Kumar
+                                </span>
+                            </h1> */}
                             <h4 
                                 className="text-14 md:text-15 uppercase font-medium tracking-0.05 flex items-center mt-32 justify-center lg:justify-start font-jost"
                                 data-aos="fade-up"
@@ -71,13 +81,13 @@ const Hero = () => {
                             </Button>
                             <a 
                                 className="uppercase btn btn-link pl-0 pt-40 lg:pt-0 lg:pl-72 block lg:inline-block"
-                                onClick={() => handleScroll("skills")}
+                                onClick={() => handleScroll("experience")}
                             >
-                                My Skills
+                                Experience
                             </a>
                         </section>
                     </article>
-                    <article className="absolute scale-50 lg:scale-90 bottom-0 top-[680px] lg:top-1/2 right-auto -ml-[340px] left-1/2 lg:left-auto lg:-right-[100px] w-[680px] h-[800px] -mt-[390px] z-[2] origin-top-center">
+                    <article className="absolute scale-50 lg:scale-90 bottom-0 top-[680px] lg:top-1/2 right-auto -ml-[340px] left-1/2 lg:left-auto lg:-right-[40px] w-[680px] h-[800px] -mt-[390px] z-[2] origin-top-center">
                         <span className="absolute left-0 bottom-0 w-[680px] h-[680px] rounded-full bg-brand"/>
                         <div className="absolute z-5 top-[420px] -left-[120px]">
                             <ul className="m-0 p-0 list-none">
