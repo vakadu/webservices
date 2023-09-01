@@ -55,12 +55,12 @@ const Resume = () => {
                             return(
                                 <section
                                     key={res.id}
-                                    className="grid grid-cols-3 px-32 py-24 max-w-[1100px] mx-auto"
+                                    className="grid grid-cols-3 md:px-32 py-24 max-w-[1100px] mx-auto"
                                     data-aos="fade-up"
                                     data-aos-duration="1200"
                                     data-aos-delay={res.delayAnimation}
                                 >
-                                    <article className="col-span-1">
+                                    <article className="col-span-2 md:col-span-1">
                                         <h2 className="text-18 font-semibold pb-6">{res.title}</h2>
                                         <h6 className="text-16 pb-6 font-medium">{res.startYear} -{" "}
                                             {res.endYear ? (
@@ -71,7 +71,7 @@ const Resume = () => {
                                         </h6>
                                         <span className="bg-brand text-white px-6 text-14 font-semibold rounded-4 py-4">Full Time</span>
                                     </article>
-                                    <article className="col-span-2">
+                                    <article className="col-span-1 md:col-span-2">
                                         <h4 className="text-16 font-semibold">{res.company}</h4>
                                     </article>
                                 </section>
