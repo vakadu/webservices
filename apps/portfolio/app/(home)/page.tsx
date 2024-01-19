@@ -33,7 +33,7 @@ const HomePage = () => {
 			<Services/>
 			{/* <Skills/> */}
 			<Resume/>
-			<Contact/>
+			{/* <Contact/> */}
 		</Fragment>
 	);
 }
