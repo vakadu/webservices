@@ -91,7 +91,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={`${sathoshi.variable} font-sathoshi`}>
-			<body>
+			<body className='bg-beige'>
 				{children}
 				<Analytics />
 			</body>
