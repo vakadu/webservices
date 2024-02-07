@@ -1,5 +1,4 @@
 import localFont from 'next/font/local';
-import { Analytics } from '@vercel/analytics/react';
 
 import './assets/css/global.css';
 import './assets/css/dark.css';
@@ -91,9 +90,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={`${sathoshi.variable} font-sathoshi`}>
-			<body className='bg-beige'>
+			<body className='bg-beige px-16 py-24'>
 				{children}
-				<Analytics />
 			</body>
 		</html>
 	);
