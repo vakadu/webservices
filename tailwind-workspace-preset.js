@@ -18,7 +18,10 @@ module.exports = {
                 },
                 red: {
                     dark: "#922B21"
-                }
+                },
+                grey: {
+                    1: '#99A3A4'
+                },
             },
             fontSize: {
                 '8': '8px',

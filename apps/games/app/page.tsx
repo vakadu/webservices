@@ -17,6 +17,12 @@ export default async function Index() {
 				>
 					2. Digital Clock
 				</Link>
+				<Link
+					className="border bg-white text-center p-16 rounded-md shadow-2 text-16 hover:font-semibold"
+					href='/calculator'
+				>
+					3. Calculator
+				</Link>
 			</section>
 		</section>
 	);
