@@ -7,7 +7,7 @@ export function useDigitalClock() {
 	const hours = date.getHours();
 	const minutes = date.getMinutes();
 	const seconds = date.getSeconds();
-	const convertHours = hours % 12;
+	const convertHours = hours <= 12 ? hours : (hours - 12);
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
@@ -25,7 +25,7 @@ export function useDigitalClock() {
 		hours: convertHours,
 		minutes,
 		seconds,
-		peroid: hours > 12 ? 'PM' : 'AM'
+		peroid: hours >= 12 ? 'PM' : 'AM'
 	}
 }
 
