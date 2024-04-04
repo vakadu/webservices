@@ -10,12 +10,13 @@ export interface InputProps {
 	labelClasses?: string;
 	errorMessage: string;
 	placeholder: string;
+	disabled?: boolean;
 }
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 	(
 		{
-			containerClasses, inputClasses, type, inputMode, label, labelClasses, errorMessage, placeholder,
+			containerClasses, inputClasses, type, inputMode, label, labelClasses, errorMessage, placeholder, disabled = false,
 			...rest
 		},
 		ref,
@@ -41,6 +42,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 						type={type}
 						inputMode={inputMode}
 						placeholder={placeholder}
+						disabled={disabled}
 						className={`h-[48px] border border-grey-stroke focus:ring-1 focus:shadow-sm outline-none w-full block transition-all duration-0.6 ease-smooth rounded-4 px-12 text-16 ${parentClass}`} 
 					/>	
 				</article>

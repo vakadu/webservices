@@ -140,3 +140,20 @@ export const randomStringGenerator = (length: number) => {
     }
     return result;
 };
+
+export const math = (a: number, b: number, sign: string) => {
+	console.log(a, b, typeof a, typeof b);
+	
+	switch(sign) {
+		case '-':
+			return a - b;
+		case 'x':
+			return a * b;
+		case '/':
+			return a / b;
+		case '%':
+			return a % b;
+		default:
+			return a + b
+	}
+};

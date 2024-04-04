@@ -11,7 +11,8 @@ module.exports = {
                 },
                 dark: {
                     bg: '#222831',
-                    drawer: '#31363c'
+                    drawer: '#31363c',
+                    1: '#2E4053',
                 },
                 green: {
                     dark: '#1E8449'
