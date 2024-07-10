@@ -5,5 +5,67 @@
 	"projectType": "application",
 	"tags": [],
 	"// targets": "to see all targets run: nx show project interview-prep --web",
-	"targets": {}
+	"targets": {
+		"build": {
+			"executor": "@nx/next:build",
+			"outputs": [
+				"{options.outputPath}"
+			],
+			"defaultConfiguration": "production",
+			"options": {
+				"outputPath": "dist/apps/interview-prep"
+			},
+			"configurations": {
+				"development": {
+					"outputPath": "apps/interview-prep"
+				},
+				"production": {}
+			}
+		},
+		"serve": {
+			"executor": "@nx/next:server",
+			"defaultConfiguration": "development",
+			"options": {
+				"buildTarget": "interview-prep:build",
+				"dev": true,
+				"port": 1001
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "interview-prep:build:development",
+					"dev": true
+				},
+				"production": {
+					"buildTarget": "interview-prep:build:production",
+					"dev": false
+				}
+			}
+		},
+		"export": {
+			"executor": "@nx/next:export",
+			"options": {
+				"buildTarget": "interview-prep:build:production"
+			}
+		},
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": [
+				"{workspaceRoot}/coverage/{projectRoot}"
+			],
+			"options": {
+				"jestConfig": "apps/interview-prep/jest.config.ts"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint",
+			"outputs": [
+				"{options.outputFile}"
+			],
+			"options": {
+				"lintFilePatterns": [
+					"apps/interview-prep/**/*.{ts,tsx,js,jsx}"
+				]
+			}
+		}
+	}
 }
