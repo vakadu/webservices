@@ -42,7 +42,7 @@ export default function Index() {
 
     const handleUndo = () => {
         const copy = [...circles], last = copy.pop();
-        setHistory((prev) => {
+        setHistory((prev: any) => {
             return [...prev, last];
         })
         setCircles(copy);
@@ -51,7 +51,7 @@ export default function Index() {
     const handleRedo = () => {
         const copy = [...history], last = copy.pop();
         setHistory(copy);
-        setCircles((prev) => {
+        setCircles((prev: any) => {
             return [...prev, last];
         })
     };
