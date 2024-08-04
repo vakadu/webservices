@@ -12,6 +12,9 @@ export default function Index() {
 			<Link className="font-medium text-[24px] hover:text-brand" href="/tree-navigation">
 				Tree Nav
 			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/pagination">
+				Pagination
+			</Link>
 		</nav>
 	);
 }
