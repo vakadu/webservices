@@ -12,6 +12,12 @@ export default function Index() {
 			<Link className="font-medium text-[24px] hover:text-brand" href="/previuos">
 				Previuos
 			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/progressbar">
+				Progress bar
+			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/carousel">
+				Carousel
+			</Link>
 		</nav>
 	);
 }

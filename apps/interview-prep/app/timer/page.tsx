@@ -2,7 +2,7 @@
 
 import useTimer from "./use-timer";
 
-const Timer = () => {
+const Page = () => {
     const { isRunning, start, stop, seconds } = useTimer();
     console.log(seconds);
 
@@ -22,4 +22,4 @@ const Timer = () => {
     )
 };
 
-export default Timer
+export default Page
