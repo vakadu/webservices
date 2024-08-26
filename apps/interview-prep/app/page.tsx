@@ -18,6 +18,12 @@ export default function Index() {
 			<Link className="font-medium text-[24px] hover:text-brand" href="/carousel">
 				Carousel
 			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/autocomplete">
+				Auto Complete
+			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/password-check">
+				Password Checker
+			</Link>
 		</nav>
 	);
 }
