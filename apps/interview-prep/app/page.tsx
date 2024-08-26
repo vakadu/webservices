@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Index() {
 	return (
-		<nav className="px-16 py-16 flex justify-center items-center gap-24">
+		<nav className="px-16 py-16 grid grid-cols-5 gap-24">
 			<Link className="font-medium text-[24px] hover:text-brand" href="/timer">
 				Timer
 			</Link>
@@ -23,6 +23,9 @@ export default function Index() {
 			</Link>
 			<Link className="font-medium text-[24px] hover:text-brand" href="/password-check">
 				Password Checker
+			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/user-avatar">
+				User Avatar
 			</Link>
 		</nav>
 	);
