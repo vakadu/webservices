@@ -27,6 +27,12 @@ export default function Index() {
 			<Link className="font-medium text-[24px] hover:text-brand" href="/user-avatar">
 				User Avatar
 			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/star-rating">
+				Star Rating
+			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/dictionary">
+				Dictionary
+			</Link>
 		</nav>
 	);
 }
