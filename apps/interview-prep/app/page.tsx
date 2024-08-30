@@ -33,6 +33,9 @@ export default function Index() {
 			<Link className="font-medium text-[24px] hover:text-brand" href="/dictionary">
 				Dictionary
 			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/hooks/useeffect">
+				Use Effect
+			</Link>
 		</nav>
 	);
 }
