@@ -33,6 +33,12 @@ export default function Index() {
 			<Link className="font-medium text-[24px] hover:text-brand" href="/dictionary">
 				Dictionary
 			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/pixel-art-grid">
+				Pixel Art Grid
+			</Link>
+			<Link className="font-medium text-[24px] hover:text-brand" href="/color-spotter">
+				Color Spotter
+			</Link>
 		</nav>
 	);
 }

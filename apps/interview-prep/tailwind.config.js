@@ -27,6 +27,9 @@ module.exports = {
 					bg: '#F5F7FA',
 				},
 			},
+			gridTemplateColumns: {
+				16: 'repeat(16, minmax(0, 1fr))',
+			},
 		},
 	},
 	plugins: [],
